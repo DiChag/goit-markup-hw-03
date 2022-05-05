@@ -26,6 +26,19 @@ h6,
 p,
 ul {
   margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  outline: 2px solid hsl(71, 100%, 50%);
+
+  width: 1200px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+
+  margin-right: auto;
+  margin-left: auto;
 }
 /* LOGO Header*/
 
@@ -62,8 +75,6 @@ ul {
   padding-left: 15px;
   padding-top: 24px;
   padding-bottom: 25px;
-
-  width: 1230px;
 }
 .all-nav {
   display: flex;
@@ -157,6 +168,7 @@ ul {
 }
 .ul-ftrs {
   display: flex;
+  justify-content: center;
 }
 .ul-ftrs li:not(:last-child) {
   margin-right: 30px;
@@ -189,6 +201,7 @@ ul {
 }
 .ul-wawd {
   display: flex;
+  justify-content: center;
 }
 .ul-wawd li:not(:last-child) {
   margin-right: 30px;
@@ -196,11 +209,11 @@ ul {
 
 /* Team */
 
-.container {
+.div-team {
   padding-bottom: 94px;
   background-color: var(--secondary-backgrounds);
 }
-.container .title {
+.div-team .title {
   padding-top: 94px;
   margin-bottom: 50px;
 
@@ -223,10 +236,12 @@ ul {
 .team {
   background-color: var(--secondary-backgrounds);
 }
+.ul-team {
+  display: flex;
+  justify-content: center;
+}
 .li-team {
-  padding-right: 30px;
-  display: inline-block;
-  display: flexbox;
+  margin-right: 30px;
 }
 .name-team {
   font-weight: 500;
@@ -268,6 +283,8 @@ ul {
   text-decoration: none;
 }
 .address {
+  margin-top: 20px;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -276,9 +293,6 @@ ul {
 }
 .ul-footer {
   padding-bottom: 60px;
-}
-.logo-footer {
-  padding: 60px 1240px 161px 215px;
 }
 
 /* BTN */
@@ -301,6 +315,7 @@ button {
 }
 .btn-filter {
   display: flex;
+  justify-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
 }
@@ -335,7 +350,8 @@ button {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; */
+  margin-left: auto;
+ } */
 
 .portfolio {
   margin: 94px 0;
