@@ -29,7 +29,12 @@ ul {
 }
 /* LOGO Header*/
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .logo {
+  margin-right: 93px;
+
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -50,6 +55,33 @@ ul {
 
 /* site nav */
 
+.container-header {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  width: 1230px;
+}
+.all-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+/* .site-nav li {
+  margin-right: 50px;
+}
+.site-nav li:last-child {
+  margin-right: 0;
+} */
+
 .site-nav a {
   font-weight: 500;
   font-size: 14px;
@@ -65,6 +97,18 @@ ul {
 .site-nav .current {
   color: var(--color-focus);
 }
+
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-nav .li-c-n + .li-c-n {
+  margin-left: 50px;
+}
+/* .contact-nav li:not(:last-child) {
+  margin-right: 50px;
+} */
 
 .contact-nav a {
   text-decoration: none;
@@ -111,10 +155,14 @@ ul {
 .features.h2 {
   visibility: hidden;
 }
-.li-ftrs {
+.ul-ftrs {
+  display: flex;
+}
+.ul-ftrs li:not(:last-child) {
+  margin-right: 30px;
+}
+.ul-ftrs li {
   width: 270px;
-  display: inline-block;
-  display: flexbox;
 }
 .features-title {
   font-weight: 700;
@@ -128,7 +176,6 @@ ul {
 /* What are we doing */
 
 .what-are-we-doing {
-  background-color: teal;
   padding-bottom: 94px;
 }
 .what-are-we-doing .title {
@@ -140,8 +187,10 @@ ul {
   letter-spacing: 0.03em;
   color: var(--light-black-text);
 }
-.img-list {
-  display: inline-block;
+.ul-wawd {
+  display: flex;
+}
+.ul-wawd li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -228,7 +277,7 @@ ul {
 .ul-footer {
   padding-bottom: 60px;
 }
-.logo {
+.logo-footer {
   padding: 60px 1240px 161px 215px;
 }
 
@@ -251,16 +300,14 @@ button {
   background: #188ce8;
 }
 .btn-filter {
-  display: inline-block;
   display: flex;
   margin-top: 94px;
   margin-bottom: 50px;
 }
-.btn-portfolio {
+.btn-filter li:not(:last-child) {
   margin-right: 8px;
 }
-.btn-filter .btn-portfolio {
-  display: inline-block;
+.btn-portfolio {
   border-radius: 4px;
   padding: 6px 22px;
 
@@ -281,4 +328,33 @@ button {
 .btn-portfolio:hover {
   background: var(--color-focus);
   color: var(--white-text);
+}
+
+/* .portfolio {
+  width: 230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; */
+
+.portfolio {
+  margin: 94px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  /* background-color: tomato; */
+}
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
