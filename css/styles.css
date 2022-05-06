@@ -241,9 +241,23 @@ ul {
   justify-content: center;
 }
 .li-team {
+  border-right: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  border-left: 1px solid var(--color-text);
+  background-color: #fff;
+}
+.li-team:not(:last-child) {
   margin-right: 30px;
 }
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
 .name-team {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -276,6 +290,7 @@ ul {
 
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: var(--footer);
 }
@@ -290,9 +305,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-text);
-}
-.ul-footer {
-  padding-bottom: 60px;
 }
 
 /* BTN */
@@ -366,6 +378,12 @@ button {
   margin-right: 30px;
   margin-bottom: 30px;
   /* background-color: tomato; */
+}
+.card-text {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .card:nth-child(3n) {
   margin-right: 0;
