@@ -30,7 +30,7 @@ ul {
 }
 
 .container {
-  outline: 2px solid yellow;
+  /* outline: 2px solid yellow; */
 
   width: 1200px;
 
@@ -148,6 +148,27 @@ ul {
 .contact-footer:hover,
 .contact-footer:focus {
   color: var(--color-focus);
+}
+
+.li-c-n::before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* outline: 1px solid red; */
+}
+.icon-mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/icon/envelope.svg);
+}
+.icon-phone::before {
+  width: 10px;
+  height: 12px;
+  background-image: url(../images/icon/smartphone.svg);
 }
 
 /* Hero */
