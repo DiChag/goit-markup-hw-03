@@ -157,18 +157,6 @@ img {
   color: var(--color-focus);
 }
 
-.contact-footer {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--secondary-white);
-}
-.contact-footer:hover,
-.contact-footer:focus {
-  color: var(--color-focus);
-}
-
 /* .li-c-n::before {
   display: inline-block;
   content: '';
@@ -270,8 +258,7 @@ img {
   padding-bottom: 94px;
   background-color: var(--secondary-backgrounds);
 }
-.div-team .title {
-  padding-top: 94px;
+.team .title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -280,14 +267,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--light-black-text);
-}
-.team > h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--light-black-text);
 }
 .ul-team {
@@ -350,6 +329,8 @@ img {
   background-color: var(--footer);
 }
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -359,13 +340,29 @@ img {
   color: var(--black-text);
 }
 .address {
-  margin-top: 20px;
+  margin-bottom: 9px;
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--white-text);
+}
+.contact-footer {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--secondary-white);
+}
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--color-focus);
+}
+.mail {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 /* BTN */
