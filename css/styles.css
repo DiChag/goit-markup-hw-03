@@ -218,6 +218,53 @@ img {
 .ul-ftrs li {
   width: 270px;
 }
+
+.li-ftrs::before {
+  display: block;
+  content: '';
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+
+  background: #f5f4fa;
+}
+.icon-antenna::before {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 120px;
+
+  background-size: 70px;
+  background-image: url(../images/icon/antenna\ 1.svg);
+}
+.icon-clock::before {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 120px;
+
+  background-size: 70px;
+  background-image: url(../images/icon/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 120px;
+
+  background-size: 70px;
+  background-image: url(../images/icon/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 120px;
+
+  background-size: 70px;
+  background-image: url(../images/icon/astronaut\ 1.svg);
+}
+
 .features-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -332,6 +379,9 @@ img {
 
   background-color: var(--footer);
 }
+.div-footer {
+  display: flex;
+}
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -344,6 +394,7 @@ img {
   color: var(--black-text);
 }
 .address {
+  margin-right: 70px;
   margin-bottom: 9px;
 
   font-style: normal;
@@ -368,6 +419,53 @@ img {
   margin-bottom: 9px;
 }
 
+.join {
+  padding-top: 20px;
+}
+.title-join {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.ul-join {
+  display: flex;
+}
+.li-join:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-join {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.link-join:hover {
+  background-color: #2196f3;
+}
+
+.inst {
+  background-image: url(../images/icon/instagram.svg);
+}
+.twi {
+  background-image: url(../images/icon/twitter.svg);
+}
+.fb {
+  background-image: url(../images/icon/facebook.svg);
+}
+.lin {
+  background-image: url(../images/icon/linkedin.svg);
+}
 /* BTN */
 
 button {
